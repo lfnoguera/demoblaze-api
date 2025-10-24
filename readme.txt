@@ -27,12 +27,21 @@ PASO 3: INSTALAR LAS DEPENDENCIAS
 3. Espera a que termine la instalación (puede tomar unos minutos)
 4. Verás muchos mensajes de descarga, esto es normal
 
-PASO 4: EJECUTAR LAS PRUEBAS CON REPORTE DETALLADO
---------------------------------------------------
+PASO 4: EJECUTAR LAS PRUEBAS
+----------------------------
+OPCIÓN A - PRUEBAS AUTOMÁTICAS CON REPORTE DETALLADO:
 1. Escribe: npm run test:api:detailed
 2. Presiona Enter
 3. Verás que se ejecutan las pruebas automáticamente
 4. Al finalizar, aparecerá un mensaje de éxito
+
+OPCIÓN B - PRUEBAS VISUALES (INTERFAZ GRÁFICA)(OPCIONAL):
+1. Escribe: npm run test:open
+2. Presiona Enter
+3. Se abrirá una ventana del navegador con Cypress
+4. Haz clic en "api-demoblaze.cy.js" para ejecutar las pruebas
+5. Podrás ver las pruebas ejecutándose paso a paso
+6. Al finalizar, verás los resultados en pantalla
 
 PASO 5: VER EL REPORTE DETALLADO
 --------------------------------
