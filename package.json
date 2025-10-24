@@ -1,0 +1,29 @@
+{
+  "name": "demoblaze-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run",
+    "test:headed": "cypress run --headed",
+    "test:open": "cypress open",
+    "test:api": "cypress run --spec cypress/e2e/api-demoblaze.cy.js",
+    "test:api:report": "cypress run --spec cypress/e2e/api-demoblaze.cy.js && npm run report:generate",
+    "test:api:detailed": "cypress run --spec cypress/e2e/api-demoblaze.cy.js && npm run report:detailed",
+    "test:report": "cypress run && npm run report:generate",
+    "report:generate": "node scripts/generate-report.js",
+    "report:detailed": "node scripts/detailed-reporter.js",
+    "report:clean": "rimraf cypress/reports/*.json cypress/reports/*.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "cypress": "^15.5.0",
+    "mochawesome": "^7.1.4",
+    "mochawesome-merge": "^5.0.0",
+    "mochawesome-report-generator": "^6.3.0",
+    "rimraf": "^5.0.0",
+    "cypress-mochawesome-reporter": "^3.5.0"
+  }
+}
